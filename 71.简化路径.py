@@ -29,7 +29,6 @@
 示例 4：
 输入：path = "/a/./b/../../c/"
 输出："/c"
-
 '''
 
 class Solution:
