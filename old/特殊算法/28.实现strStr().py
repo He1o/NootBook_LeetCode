@@ -30,7 +30,7 @@ class Solution:
     def strStr(self, haystack, needle):
         if not needle:
             return 0
-        n = len(needle)
+        
         i, j = 0, len(needle)
         while j <= len(haystack):
             if haystack[i:j] == needle:
