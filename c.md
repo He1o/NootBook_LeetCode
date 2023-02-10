@@ -12,6 +12,8 @@ int不赋初值的话，a可能是任意值
 
 双引号对包括的是一个字符串，字符串的结尾必须以'\0'字符(数值0)作为结尾标志。如果包括的是单个字母，表示这个字符串只有一个字母成员，再包括末尾的'\0'字符(数值0)作为结尾标志，这样在存储器中实际占用存放两个字母所需的空间。
 
+string和vector一样都有 push_back 和 pop_back
+
 ### 2. 定义数组
 ```
 int a[] = {2, 3, 4}
@@ -19,9 +21,19 @@ int a[] = {2, 3, 4}
 
 ### 2. 定义哈希表
 ```
-unordered_map<string, int> a = {
+unordered_map<string, int> hashtable = {
     {key1, val1},
     {key2, val2}
 }
 ```
+hashtable.count(key) 对key进行计数，如果存在则为1，不存在则为0，最大为1.
+
 当使用[]调用键值对时，如没有则会在其中添加，如果值的类型为int，则默认值为0
+
+### 5. 栈
+```
+stack<int> stk;
+stk.push(); //存入
+stk.pop(); 
+stk.top();
+```
